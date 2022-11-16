@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+@media screen and (min-width:768px) {
+
+body{
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: black;
+    margin: 0;
+} 
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3);
+    grid-template-rows:repeat(auto) ;
+    grid-template-areas: 
+   
+    ' header ' 
+    ' main '   
+    ' footer '
+    ;
+
+}
+
+.header_nav_ul{
+
+    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    background-color: transparent;
+    list-style: none ;
+    margin: 5px;
+    padding: 5px;
+}
+.header_nav_ul a  {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+header{
+     display: flex;
+     align-items: center;
+     width: 100vw;
+    grid-area: header;
+
+    }
+
+.img_logo{ 
+    width: 150%;
+    height: 150%;
+    margin-left: 1.800em;
+    
+  
+  
+}
+
+.header-title {
+    background-color: transparent;
+
+}
+
+.divContainer{
+    height: 6.25em;
+    width: 6.25em;
+}
+
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.75em;
+}
+
+main{ 
+    min-height: 25em;
+
+}
+
+
+
+/* pagina de inicio */
+
+.mainInicio  {
+    padding: 9.375em;
+    grid-area: main;
+}   
+
+
+
+
+
+.videoPrincipal> h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    margin: 60px; 
+}
+
+
+
+
+
+.headerVideo> video{
+
+position: absolute;
+left: 0;
+top: 0;
+height: 100vh;
+width: 100vw;
+z-index: -1;
+}  
+
+.headerVideo> video video{
+    min-width: 100%;
+    min-height: 100%;
+    
+} 
+
+.mainInicio{
+
+    margin: 0% 15%;
+    padding: auto;
+}
+
+.fotosyEvento {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+
+    margin: 0% 0%;
+}
+
+
+.proximaWPL {
+color: #ffffff;
+text-align: center;
+text-transform: uppercase;
+font-style: italic;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 10px;
+padding: 10px;}
+
+.proximaWPL> img {
+
+    border: 1px solid white;
+    height: 350px;
+    width: 350px;
+    margin: 15px;
+    padding: 15px;
+      
+}
+
+.galeria {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+.galeria> img {
+
+    border: 1px solid white;
+    height: 350px;
+    width: 350px;
+    margin: 15px;
+    padding: 15px;
+      
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items:flex-end;
+    margin: 0% 50%;
+    grid-area: footer;
+  
+} 
+
+.footerLogos> img {
+
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    padding: 20px;
+} 
+
+/* Pagina eventos  */
+
+.volumenes {
+
+   display: inline-block;
+   margin: 30px;
+   padding: 30px;
+   
+}  
+
+.volumenes> img {
+
+    margin: 0px 60px;
+
+    width: 400px;
+    height: 500px;
+} 
+.volumenes> h2 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+.eventoActual > h2 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 40px;
+    padding: 40px;
+}
+.eventoActual > img {
+    height: 45%;
+    width: 45%;
+    margin: 0px 50px 0px 180px;
+    padding: 30px;
+  
+}
+
+.headerVideoEventos> video {
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 200vh;
+        width: 100vw;
+        z-index: -1;
+        }  
+        
+ .headerVideoEventos> video video{
+            min-width: 800%;
+            min-height: 800%;
+        } 
+
+
+
+/* Pagina nosotros */
+
+.nosotrosA > h1 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 40px;
+    padding: 40px;
+}
+
+.nosotrosA > p {
+    color: #ffffff;
+    text-align: justify;
+    margin: 60px;
+    padding: 60px;
+
+
+}
+
+
+.nosotrosImagen {
+    margin: 80px;
+    padding: 80px;
+
+}
+
+.nosotrosImagen > img {
+
+margin: 0% 10%;
+width: 80%;
+
+}
+
+/* Pagina lineup */
+
+.djs {
+
+    display: inline-block;
+    margin: 30px;
+    padding: 30px;
+
+}
+
+.djs> img {
+    
+    width: 350px;
+} 
+
+.djs> h2 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Pagina contacto */
+
+.mainContacto {
+    margin: auto;
+    padding: 80px;
+    height: 200px;
+    width: 200px;
+
+}
+
+fieldset> legend {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+} 
